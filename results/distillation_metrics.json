@@ -1,0 +1,16 @@
+{
+  "technique": "distillation_toy_4layer_256dim",
+  "param_count": 16287488,
+  "model_size_mb": 62.15055179595947,
+  "perplexity_mean": 2093.6396782891024,
+  "average_loss": 7.64665930321876,
+  "latency_mean_ms": 0.1899341009767852,
+  "latency_std_ms": 0.011386067085130673,
+  "macs_per_forward": 821121280,
+  "sample_output": "The history of artificial intelligence for video , from on only and both both the,, over\n for the \" - and\n for the from ( , , in the the, ( for over the\n A a Chinese ( and\n at in ,\n the in the and the",
+  "notes": "Toy-scale knowledge distillation: 4-layer/256-dim student trained from random init for 200 steps on WikiText tokens, using KL-divergence (temperature=2.0) + hard-label loss (alpha=0.5) against the base GPT-2 teacher. Not representative of full distillation quality \u2014 scoped down for time. Hard loss dropped from ~10.8 to ~7.9 over training, confirming real learning occurred.",
+  "ppl_degradation_pct": 4166.62,
+  "compression_ratio": 7.639,
+  "macs_reduction_pct": 96.23,
+  "latency_change_pct": -95.09
+}

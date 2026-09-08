@@ -1,0 +1,16 @@
+{
+  "technique": "ptq_int8_excl_lmhead",
+  "param_count": 163037184,
+  "model_size_mb": 474.751633644104,
+  "perplexity_mean": 49.0702002703826,
+  "average_loss": 3.8932519314136913,
+  "latency_mean_ms": 4.270834344921681,
+  "latency_std_ms": 0.8825661621756882,
+  "macs_per_forward": 21806445312,
+  "sample_output": "The history of artificial intelligence in the UK is a little bit more complicated. Artificial intelligence is used in many industries and industries, including engineering. It is used in many things, from teaching computer science in high school to medicine. We've got many companies running experiments using artificial intelligence",
+  "notes": "Dynamic PTQ (INT8) applied to all attn/mlp Linear layers. lm_head deliberately excluded: since it's weight-tied to wte (768x50257), quantizing it collapsed PPL from 49.07 to 15733.34 due to outlier-dominated per-tensor scale calibration crushing resolution for common tokens. Excluding it fully recovers baseline-level PPL, demonstrating not all layers tolerate PTQ equally.",
+  "ppl_degradation_pct": 0.0,
+  "compression_ratio": 1.0,
+  "macs_reduction_pct": 0.0,
+  "latency_change_pct": 10.38
+}

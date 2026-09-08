@@ -1,0 +1,11 @@
+{
+  "technique": "base",
+  "param_count": 124439808,
+  "model_size_mb": 474.74195194244385,
+  "perplexity_mean": 49.0702002703826,
+  "average_loss": 3.8932519314136913,
+  "latency_mean_ms": 3.8693562976562568,
+  "latency_std_ms": 0.7244249321893615,
+  "macs_per_forward": 21806445312,
+  "sample_output": "The history of artificial intelligence is not an abstract concept, but the work of scientists, engineers, entrepreneurs, and entrepreneurs. The history of artificial intelligence is a long and complex one where some may find it difficult to explain the basic concepts or methods to their own minds. And the"
+}

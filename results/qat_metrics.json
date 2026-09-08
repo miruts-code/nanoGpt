@@ -1,0 +1,16 @@
+{
+  "technique": "qat_simulated_int8_excl_lmhead",
+  "param_count": 124439808,
+  "model_size_mb": 474.75486850738525,
+  "finetune_steps": 200,
+  "final_loss": 3.6076323986053467,
+  "perplexity_mean": 35.40939395499647,
+  "average_loss": 3.5669771508967623,
+  "latency_mean_ms": 6.091838340821454,
+  "latency_std_ms": 0.8702917060766253,
+  "sample_output": "The history of artificial intelligence is that it has been a step forward and a step back from the development of the human mind in the 1950s and 60s. The first artificial intelligence was developed in the 1960s in a team of scientists called the Computer Science and Artificial Intelligence (",
+  "notes": "Simulated QAT: FakeQuant (round-trip INT8 quantize/dequantize) applied inside forward() of every attn/mlp Linear during a 200-step fine-tune. lm_head excluded, consistent with the PTQ finding. Weights stored in FP32 (simulation only) \u2014 model_size_mb does not yet reflect true deployment size; only perplexity/latency-under-simulated-noise are meaningful from this run.",
+  "ppl_degradation_pct": -27.84,
+  "compression_ratio": 1.0,
+  "latency_change_pct": 57.44
+}

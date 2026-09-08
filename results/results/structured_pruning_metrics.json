@@ -1,0 +1,17 @@
+{
+  "technique": "pruning_structured_mlp_30pct",
+  "param_count": 107434440,
+  "model_size_mb": 409.8814687728882,
+  "prune_fraction_requested": 0.3,
+  "perplexity_mean": 826.2178824017735,
+  "average_loss": 6.716858518884537,
+  "latency_mean_ms": 3.507381441015056,
+  "latency_std_ms": 0.6425613201721673,
+  "macs_per_forward": 17455903488,
+  "sample_output": "The history of artificial intelligence (CEC) and the production of the first cyber-computer computer system, computer, and all of the related related related technical and other parts of the first major and later stages of the first and all of the first and the first and subsequent stages",
+  "notes": "Structured pruning: removed 30% of MLP hidden neurons per block (c_fc/c_proj physically resized via L2-norm importance ranking), not just masked. Unlike unstructured pruning, param_count, model_size_mb, and macs_per_forward all genuinely decrease.",
+  "ppl_degradation_pct": 1583.75,
+  "compression_ratio": 1.158,
+  "macs_reduction_pct": 19.95,
+  "latency_change_pct": -9.35
+}

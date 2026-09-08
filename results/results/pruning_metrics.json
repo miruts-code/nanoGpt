@@ -1,0 +1,17 @@
+{
+  "technique": "pruning_unstructured_l1_30pct",
+  "param_count": 124439808,
+  "model_size_mb": 474.7520742416382,
+  "sparsity": 0.30000005990349127,
+  "perplexity_mean": 70.3822499297965,
+  "average_loss": 4.253941099694434,
+  "latency_mean_ms": 4.686950873827733,
+  "latency_std_ms": 2.4974363131885378,
+  "macs_per_forward": 21806445312,
+  "sample_output": "The history of artificial intelligence will be the first to know.\n\nThe first artificial intelligence research was conducted by Jules de Saint Martin in 1936, a mathematician from the University of Lyon in France, who was at the time in France, and worked in France to discover the",
+  "notes": "Unstructured L1 magnitude pruning at 30% target sparsity per Linear layer, weights permanently zeroed via prune.remove(). Model size/latency/MACs remain similar to base since tensor shapes are unchanged \u2014 only actual model weights are zeroed, not removed. Real-world speedup would require sparse-aware hardware/kernels.",
+  "ppl_degradation_pct": 43.43,
+  "compression_ratio": 1.0,
+  "macs_reduction_pct": 0.0,
+  "latency_change_pct": 21.13
+}
